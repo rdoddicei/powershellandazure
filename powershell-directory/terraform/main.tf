@@ -253,3 +253,4 @@ exec-query -databaseConnection $applicationDatabaseConnection -sql $sql -paramet
 #set Service Bus Registry Keys
 exec-query -databaseConnection $applicationDatabaseConnection -sql "USE $($applicationDatabaseName); EXEC BMRAM.setRegistryKeyValue 'DefaultIntegrationHandlerConfiguration', '$($integrationRestClientconfigurationId)'" -continueOnError $continueOnError;
 
+*
