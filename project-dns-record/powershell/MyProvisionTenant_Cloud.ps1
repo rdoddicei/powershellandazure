@@ -1955,7 +1955,7 @@ $message | Out-File $logfile -Append
 
 #Defining variables for terraform.tfvars file
 $tfvarsFile = "terraform\variables.tfvars"
-$terraformScriptPath = "..\terraform"
+$terraformScriptPath = ".\terraform"
 
 $tfvarsContent = @ "
 subdomain = "$subdomain"

@@ -5,7 +5,7 @@ on:
     inputs:
       # If you want to allow users to trigger the workflow manually and still define any input, you can add inputs here.
       # However, if you don't want any user inputs, you can skip defining them here.
-      # customerID:
+      #   customerID:
       #   description: 'Customer ID'
       #   required: true
       #   type: string
@@ -26,7 +26,7 @@ jobs:
       # Run PowerShell Script to Generate Terraform Variables and Execute Terraform
       - name: Run PowerShell Script
         run: |
-          pwsh ./path_to_your_powershell_script.ps1  # Adjust the path to your PowerShell script
+          pwsh ./powershell/MyProvisionTenant_Cloud.ps1 
         # Optional: You can specify environment variables if needed by the PowerShell script (only if it's not handled internally in the script)
         # env:
         #   CUSTOMER_ID: ${{ github.event.inputs.customerID }}   # If you choose to define inputs manually again
